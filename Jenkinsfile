@@ -8,7 +8,7 @@ pipeline {
 
   stages {
     stage( 'Clone' ) {
-      agent any
+      agent build
       steps {
         git branch: 'main',
             url: 'https://gitlab.com/devtdq1701/todo-app.git'
