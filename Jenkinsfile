@@ -11,7 +11,7 @@ pipeline {
       agent { node {label 'build'}}
       steps {
         git branch: 'main',
-            url: 'https://gitlab.com/devtdq1701/todo-app.git'
+            url: 'https://github.com/devtdq1701/todo-app.git'
         }
       }
     // stage("Test") {
