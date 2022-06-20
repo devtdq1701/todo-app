@@ -11,8 +11,8 @@ pipeline {
       agent { node {label 'build'}}
       steps {
         git branch: 'main',
-            url: 'https://gitlab.com/devtdq1701/todo-app.git',
-            credentialsId: 'dangquang-github'
+            credentialsId: 'dangquang-github',
+            url: 'https://gitlab.com/devtdq1701/todo-app.git'
         }
       }
     // stage("Test") {
